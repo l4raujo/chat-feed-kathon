@@ -1,0 +1,143 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "DM Sans", serif;
+}
+
+.container{
+    width: 100vw;
+    height: 100vh;
+    background-image: url(/images/fundo-feed.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.content{
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(49, 49, 49, 0.11);
+    backdrop-filter: blur(100px);
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 4rem;
+    overflow-x: hidden;
+    overflow-y: hidden;
+}
+
+.top{
+    width: 100%;
+    height: 20vh;
+    display: flex;
+    align-items: center;
+    gap: 3rem;
+    padding-top: 2rem;
+}
+
+.logo{
+    width: 20%;
+    height: 15vh;
+    display: flex;
+    align-items: center;
+    padding-left: 2%;
+    gap: 2rem;
+}
+
+.top img{
+    width: 50px;
+    height: 50px;
+}
+
+
+.text{
+    position: relative;
+    left: 7%;
+    width: 40%;
+}
+
+.top h1{
+    font-size: 2.5rem;
+    color: #fff;
+    text-align: center;
+}
+
+.top span{
+    color: #01FFA6;
+}
+
+.options{
+    width: 30%;
+    height: 40vh;
+    position: absolute;
+    border: 1px solid #ffffff31;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 5rem;
+    top: 30%;
+}
+
+.btn{
+    text-decoration: none;
+    font-size: 1.5rem;
+    width: 10vw;
+    height: 8vh;
+    background-color: #01FFA6;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    color: black;
+    font-weight: bold;
+    transition: 0.3s ease-in-out;
+    border: 1px solid #ffffff44;
+}
+
+.btn:hover{
+    background-color: black;
+    color: #fff;
+}
+
+.decorations{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.arcos{
+    width: 30vw;
+    height: 63vh;
+    position: relative;
+    top: 12%;
+}
+
+.vr{
+    position: relative;
+    left: 12%;
+    bottom: 10%;
+}
+
+
+@media screen and (min-width: 1920px){
+    .logo{
+        position: relative;
+        bottom: 10%;
+    }
+
+    .arcos{
+        top: 22%;
+    }
+
+    .vr{
+        top: 15%;
+        left: 8%;
+    }
+}
